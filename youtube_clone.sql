@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS myyoutube;
+USE myyoutube;
+
+CREATE TABLE videos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255),
+  filename VARCHAR(255),
+  thumbnail VARCHAR(255),
+  uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
