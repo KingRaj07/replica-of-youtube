@@ -1,0 +1,17 @@
+<!-- frontend/upload.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Video - MyYouTube</title>
+</head>
+<body>
+  <h2>Upload Video</h2>
+  <form action="/backend/upload.php" method="POST" enctype="multipart/form-data">
+    <input type="text" name="title" placeholder="Video Title" required><br>
+    <input type="file" name="video" accept="video/*" required><br>
+    <input type="file" name="thumbnail" accept="image/*" required><br>
+    <button type="submit">Upload</button>
+  </form>
+</body>
+</html>
